@@ -1,0 +1,29 @@
+.tags-group {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+  column-gap: 8px;
+
+  @include for-tablet-up {
+    column-gap: 4px;
+  }
+
+  &__item {
+    &--time {
+      display: inline-flex;
+      align-items: center;
+
+      @include for-tablet-up {
+        margin-left: 4px;
+      }
+    }
+  }
+
+  &__time {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    white-space: nowrap;
+    color: #b3b7c7;
+  }
+}

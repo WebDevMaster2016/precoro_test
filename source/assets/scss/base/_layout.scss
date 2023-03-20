@@ -1,0 +1,45 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  color: #ffffff;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+// fix for css grid parent to all direct descendant 'min-width: auto'
+.main {
+  min-width: 0;
+}
+
+.disabled-scroll {
+  overflow-y: hidden;
+
+  .header {
+    background-color: $transparent-black;
+  }
+}
+
+.wrapper {
+  max-width: 1120px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.visually-hidden:not(:focus):not(:focus-within):not(:active) {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}

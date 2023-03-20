@@ -1,0 +1,17 @@
+# top-most EditorConfig file
+root = true
+
+[*]
+charset = utf-8
+
+[*.md]
+trim_trailing_whitespace = false
+
+# Ignore paths
+[source/node_modules/**]
+indent_style = unset
+indent_size = unset
+tab_width = unset
+end_of_line = unset
+trim_trailing_whitespace = unset
+insert_final_newline = unset

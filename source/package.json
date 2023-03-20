@@ -1,0 +1,81 @@
+{
+  "private": "true",
+  "type": "module",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "npm i && gulp build",
+    "dev": "npm rebuild node-sass && gulp",
+    "build": "npm i && npm rebuild node-sass && gulp build"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not ie < 11",
+    "iOS > 8"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WebDevMaster2016/bazinger_html"
+  },
+  "author": "HapifyUs",
+  "license": "ISC",
+  "homepage": "http://www.hapify.us/",
+  "devDependencies": {
+    "@babel/core": "7.21.3",
+    "@babel/eslint-parser": "7.21.3",
+    "@babel/preset-env": "7.20.2",
+    "@babel/register": "7.21.0",
+    "autoprefixer": "10.4.14",
+    "babelify": "10.0.0",
+    "browser-sync": "2.29.0",
+    "browserify": "17.0.0",
+    "del": "7.0.0",
+    "eslint": "8.36.0",
+    "eslint-config-prettier": "8.7.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "event-stream": "4.0.1",
+    "glob": "8.1.0",
+    "gulp": "4.0.2",
+    "gulp-cached": "1.1.1",
+    "gulp-csso": "4.0.1",
+    "gulp-dependents": "1.2.5",
+    "gulp-file-include": "2.3.0",
+    "gulp-flatten": "0.4.0",
+    "gulp-hash-filename": "4.1.0",
+    "gulp-inject": "5.0.5",
+    "gulp-inject-string": "1.1.2",
+    "gulp-libsquoosh": "1.1.2",
+    "gulp-notify": "4.0.0",
+    "gulp-plumber": "1.2.1",
+    "gulp-postcss": "9.0.1",
+    "gulp-real-favicon": "0.3.2",
+    "gulp-rename": "2.0.0",
+    "gulp-sass": "5.1.0",
+    "gulp-sourcemaps": "3.0.0",
+    "gulp-svg-sprite": "2.0.2",
+    "gulp-uglify": "3.0.2",
+    "path": "0.12.7",
+    "postcss": "8.4.21",
+    "prettier": "2.8.4",
+    "pump": "3.0.0",
+    "sass": "1.59.3",
+    "stylelint": "15.3.0",
+    "stylelint-config-prettier-scss": "0.0.1",
+    "stylelint-config-standard-scss": "7.0.1",
+    "stylelint-scss": "4.5.0",
+    "vinyl-buffer": "1.0.1",
+    "vinyl-source-stream": "2.0.0"
+  },
+  "dependencies": {
+    "browserslist": "4.21.5",
+    "choices.js": "^10.2.0",
+    "nouislider": "^15.7.0",
+    "swiper": "9.1.1",
+    "wnumb": "^1.2.0"
+  }
+}

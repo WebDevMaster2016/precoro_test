@@ -1,0 +1,80 @@
+.card {
+  $this: &;
+
+  text-align: center;
+  padding: 24px;
+  border-radius: 8px;
+  background: #f7f9fc;
+  transition: opacity 0.225s ease;
+  will-change: opacity;
+
+  @include for-desktop-up {
+    flex-shrink: 0;
+    max-width: 310px;
+    width: 100%;
+  }
+
+  &.is-inactive {
+    opacity: 0.25;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  &--individual {
+    #{$this}__price {
+      font-size: 26px;
+      line-height: 32px;
+
+      @include for-desktop-up {
+        font-size: 32px;
+        line-height: 40px;
+      }
+    }
+  }
+
+  &__users {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #676f8f;
+    margin-top: 4px;
+  }
+
+  &__price {
+    font-family: $secondary-font-family;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #1d2452;
+    margin-top: 24px;
+  }
+
+  &__price-description {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #676f8f;
+    margin-top: 12px;
+    max-width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__button {
+    margin-top: 32px;
+  }
+
+  &__arrow {
+    width: 12px;
+    height: 12px;
+    fill: #fff;
+    margin-left: 10px;
+  }
+
+  &__image {
+    display: block;
+    margin-top: 18px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

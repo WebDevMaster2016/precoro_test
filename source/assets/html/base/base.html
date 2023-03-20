@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html class="page-root"
+      lang="@@page-lang"
+>
+<head>
+    <title>@@page-title</title>
+    <meta name="description" content="@@page-description">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    @@include("partials/common/favicon.html")
+
+    <link rel='preload'
+          href='@@fonts_inter__inter-v12-latin_latin-ext-600.woff2'
+          as='font'
+          type='font/woff2'
+          crossorigin
+    >
+    <link rel='preload'
+          href='@@fonts_inter__inter-v12-latin_latin-ext-700.woff2'
+          as='font'
+          type='font/woff2'
+          crossorigin
+    >
+
+    @@include('partials/front/css/common.html')
+    @@if (style) {@@include('partials/front/css/@@style')}
+</head>
+<body>
+<main class="main">

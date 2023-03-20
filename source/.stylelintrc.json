@@ -1,0 +1,15 @@
+{
+  "rules": {
+    "color-hex-length": "long",
+    "declaration-block-no-redundant-longhand-properties": null,
+    "shorthand-property-no-redundant-values": null,
+    "selector-pseudo-element-colon-notation": "single",
+    "color-function-notation": "legacy",
+    "alpha-value-notation": "number",
+    "scss/dollar-variable-pattern": "(_[a-z0-9]+)*$"
+  },
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-prettier-scss"
+  ]
+}

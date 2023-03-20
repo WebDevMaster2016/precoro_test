@@ -1,0 +1,38 @@
+.currency {
+  display: flex;
+  justify-content: center;
+  column-gap: 22px;
+  margin-top: 24px;
+
+  @include for-desktop-up {
+    margin-top: initial;
+    justify-content: flex-end;
+  }
+
+  &__element {
+    position: relative;
+
+    &:not(:first-child):before {
+      content: ' ';
+      position: absolute;
+      left: -11px;
+      top: 2px;
+      width: 1px;
+      height: 18px;
+      background-color: #dddee5;
+    }
+  }
+
+  &__button {
+    font-family: $base-font-family;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #676f8f;
+
+    &.is-active {
+      color: #4545f5;
+    }
+  }
+}

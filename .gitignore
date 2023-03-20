@@ -1,0 +1,6 @@
+.idea
+.DS_Store
+source/node_modules
+source/assets/html/base/partials/front/css/
+source/assets/html/base/partials/front/js/
+source/faviconData.json

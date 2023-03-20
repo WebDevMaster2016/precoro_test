@@ -1,0 +1,51 @@
+.tag {
+  $this: &;
+
+  min-height: 60px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  cursor: pointer;
+
+  &--tara {
+    --tag-bg-color: #e1f6e9;
+    --tag-text-color: #00a338;
+
+    @include hover-supported {
+      --tag-bg-color: #cdf1da;
+    }
+  }
+
+  &--titan-white {
+    --tag-bg-color: #e3e3fe;
+    --tag-text-color: #4545f5;
+
+    @include hover-supported {
+      --tag-bg-color: #d0d0fd;
+    }
+  }
+
+  &--lily-white {
+    --tag-bg-color: #e4f8ff;
+    --tag-text-color: #00a3de;
+
+    @include hover-supported {
+      --tag-bg-color: #d3f3ff;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--tag-text-color);
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 28px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 20px;
+    background-color: var(--tag-bg-color);
+    transition: background-color 0.225s ease;
+  }
+}

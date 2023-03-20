@@ -1,0 +1,199 @@
+@@include('base.html', {
+  "page-lang": "en",
+  "page-title": "Precoro buy-now",
+  "page-description": "Precoro buy-now",
+  "style": "buy-now.html"
+})
+
+<section class="buy-now">
+  <div class="wrapper buy-now__wrapper">
+    <div class="buy-now__box">
+      <header class="buy-now__header">
+        <h1 class="headline headline--lvl1 buy-now__headline">Estimate your investment</h1>
+
+        <div class="buy-now__header-action">
+          <ul class="currency">
+            <li class="currency__element">
+              <button class="currency__button js-currency-button is-active"
+                      type="button"
+              >usd</button>
+            </li>
+            <li class="currency__element">
+              <button class="currency__button js-currency-button"
+                      type="button"
+              >eur</button>
+            </li>
+            <li class="currency__element">
+              <button class="currency__button js-currency-button"
+                      type="button"
+              >gbp</button>
+            </li>
+          </ul>
+
+          <div class="user-select">
+            <label for="usersSelect"
+                   class="user-select__text"
+            >How many users?</label>
+            <select id="usersSelect"
+                    class="js-select"
+            ></select>
+          </div>
+
+          <div class="range-slider">
+            <div class="range-slider__element js-range-slider"></div>
+            <div class="range-slider__pips">
+              <div class="range-slider__pips-start">0</div>
+              <div class="range-slider__pips-middle js-pips-middle">20</div>
+              <div class="range-slider__pips-end">&infin;</div>
+            </div>
+            <div class="range-slider__text js-final-text">
+                <p class="range-slider__text-top">More than 20?</p>
+                <a class="range-slider__text-link" href="#">
+                  Get a Custom Quote
+                  <svg class="icon range-slider__text-arrow">
+                    <use xlink:href="@@sprites_buyNow__arrow-right"></use>
+                  </svg>
+                </a>
+            </div>
+          </div>
+
+        </div>
+
+      </header>
+
+      <div class="buy-now__group">
+
+        <div class="buy-now__cards">
+          <div class="card js-card-20">
+            <h2 class="headline headline--lvl2 card__headline">For smaller teams</h2>
+            <p class="card__users">with ≤20 users</p>
+            <p class="card__price js-price">$35</p>
+            <p class="card__price-description">per user per month billed annually</p>
+            <a class="button button--blue card__button"
+               href="#"
+            >
+              Get Started
+              <svg class="icon card__arrow">
+                <use xlink:href="@@sprites_buyNow__arrow-right"></use>
+              </svg>
+            </a>
+            <img class="card__image"
+                 loading="lazy"
+                 width="142"
+                 height="142"
+                 src="@@images_buyNow__smaller_teams.svg"
+                 alt="smaller teams figure"
+            >
+          </div>
+          <div class="card card--individual is-inactive js-card-more20">
+            <h2 class="headline headline--lvl2 card__headline">For larger teams</h2>
+            <p class="card__users">with >20 users</p>
+            <p class="card__price">Individually tailored pricing</p>
+            <p class="card__price-description">billed annually</p>
+            <a class="button button--blue card__button"
+               href="#"
+            >
+              Get a Custom Quote
+              <svg class="icon card__arrow">
+                <use xlink:href="@@sprites_buyNow__arrow-right"></use>
+              </svg>
+            </a>
+            <img class="card__image"
+                 loading="lazy"
+                 width="142"
+                 height="142"
+                 src="@@images_buyNow__building.svg"
+                 alt="building figure"
+            >
+          </div>
+        </div>
+
+        <div class="features">
+          <h2 class="headline headline--lvl2 features__headline">All plans include:</h2>
+          <ul class="features__list">
+            <li class="features__list-item">
+              <svg class="icon features__arrow">
+                <use xlink:href="@@sprites_buyNow__check_mark"></use>
+              </svg>
+              Direct integration with QuickBooks or Xero
+            </li>
+            <li class="features__list-item">
+              <svg class="icon features__arrow">
+                <use xlink:href="@@sprites_buyNow__check_mark"></use>
+              </svg>
+              Unlimited Custom Fields & Workflows
+            </li>
+            <li class="features__list-item">
+              <svg class="icon features__arrow">
+                <use xlink:href="@@sprites_buyNow__check_mark"></use>
+              </svg>
+              Standard onboarding and support
+            </li>
+            <li class="features__list-item">
+              <svg class="icon features__arrow">
+                <use xlink:href="@@sprites_buyNow__check_mark"></use>
+              </svg>
+              Multi-Departments / Projects
+            </li>
+            <li class="features__list-item">
+              <svg class="icon features__arrow">
+                <use xlink:href="@@sprites_buyNow__check_mark"></use>
+              </svg>
+              Unlimited Document storage
+            </li>
+            <li class="features__list-item">
+              <svg class="icon features__arrow">
+                <use xlink:href="@@sprites_buyNow__check_mark"></use>
+              </svg>
+              Amazon Business PunchIn
+            </li>
+            <li class="features__list-item">
+              <svg class="icon features__arrow">
+                <use xlink:href="@@sprites_buyNow__check_mark"></use>
+              </svg>
+              Multi-Currencies
+            </li>
+            <li class="features__list-item">
+              <svg class="icon features__arrow">
+                <use xlink:href="@@sprites_buyNow__check_mark"></use>
+              </svg>
+              Lifetime updates
+            </li>
+            <li class="features__list-item">
+              <svg class="icon features__arrow">
+                <use xlink:href="@@sprites_buyNow__check_mark"></use>
+              </svg>
+              3-way matching
+            </li>
+            <li class="features__list-item">
+              <svg class="icon features__arrow">
+                <use xlink:href="@@sprites_buyNow__check_mark"></use>
+              </svg>
+              Multi-Locations
+            </li>
+            <li class="features__list-item">
+              <svg class="icon features__arrow">
+                <use xlink:href="@@sprites_buyNow__check_mark"></use>
+              </svg>
+              Budgets
+            </li>
+          </ul>
+          <a class="features__link"
+             href="#"
+          >
+            See all features
+            <svg class="icon features__link-arrow">
+              <use xlink:href="@@sprites_buyNow__arrow-right"></use>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+@@include('footer.html', {
+  "script": "buyNow.html"
+})

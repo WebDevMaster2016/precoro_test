@@ -1,0 +1,78 @@
+@mixin for-tablet-up {
+  @media (min-width: 640px) {
+    @content;
+  }
+}
+
+@mixin for-laptop-up {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-up {
+  @media (min-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-down {
+  @media (max-width: 1169px) {
+    @content;
+  }
+}
+
+@mixin hover-supported {
+  @media (min-width: 1170px) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+@mixin focus-visible {
+  &:focus-visible {
+    outline: 0 none;
+    box-shadow: 0 0 0 2px rgba(#80ffdf, 0.5), 0 0 0 3px rgba(#80ffdf, 0.5);
+    border-radius: 2px;
+  }
+}
+
+@mixin no-focus-visible {
+  &:focus-visible {
+    outline: initial;
+    box-shadow: initial;
+  }
+}
+
+@mixin multi-line-ellipsis($line-count) {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line-count;
+  white-space: pre-wrap;
+}
+
+@mixin no-multi-line-ellipsis() {
+  overflow: initial;
+  display: initial;
+  -webkit-box-orient: initial;
+  -webkit-line-clamp: initial;
+  white-space: initial;
+}
+
+/* woff2 - Chrome 26+, Opera 23+, Firefox 39+ */
+
+/* woff - Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+@mixin font-face($family, $weight, $folder, $font-name) {
+  @font-face {
+    font-family: $family;
+    font-style: normal;
+    font-weight: $weight;
+    font-display: swap;
+    src: url('#{$path-to-static-fonts}#{$folder}/#{$font-name}.woff2')
+        format('woff2'),
+      url('#{$path-to-static-fonts}#{$folder}/#{$font-name}.woff')
+        format('woff');
+  }
+}

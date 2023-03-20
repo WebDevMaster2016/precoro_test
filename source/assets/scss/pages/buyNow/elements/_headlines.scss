@@ -1,0 +1,27 @@
+.headline {
+  color: #1d2452;
+
+  &--lvl1 {
+    font-family: $secondary-font-family;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 32px;
+
+    @include for-tablet-up {
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+
+  &--lvl2 {
+    font-family: $base-font-family;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+
+    @include for-tablet-up {
+      font-size: 22px;
+      line-height: 32px;
+    }
+  }
+}
